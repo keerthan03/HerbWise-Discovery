@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="370sp"
+        android:layout_height="370sp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="18dp"
+        android:background="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/classified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="155dp"
+        android:text="Classified as:"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/classified"
+        android:layout_marginTop="-116dp"
+        android:background="#FF4081"
+        android:padding="12dp"
+        android:text="Take Picture"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/selectImageBtn"
+        android:layout_width="131dp"
+        android:layout_height="61dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-58dp"
+        android:layout_marginEnd="1dp"
+        android:background="#00BCD4"
+        android:padding="12dp"
+        android:text="Select Image"
+        android:textColor="#E6E6FA"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectImageBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text=""
+        android:textColor="#C30000"
+        android:textSize="27sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/confidencesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result"
+        android:layout_marginTop="-134dp"
+        android:textColor="#333333"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/confidence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confidencesText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-51dp"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/homeButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFC107"
+            android:padding="12dp"
+            android:text="Home"
+            android:textColor="#E6E6FA"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/mapsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFC107"
+            android:padding="12dp"
+            android:text="Maps"
+            android:textColor="#E6E6FA"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+
+</RelativeLayout>
