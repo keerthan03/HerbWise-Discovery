@@ -1,4 +1,4 @@
-# Medicinal Plant Detection Android App
+# HerbWise
 
 A mobile application developed with Android Studio for detecting medicinal plants using TensorFlow Lite (TFLite) models.
 
